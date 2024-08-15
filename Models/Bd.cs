@@ -16,6 +16,15 @@ public static void AgregarDeportista(deportista dep)
     }
 }
 
+public static void EliminarDeportista(int idDeportista)
+{   
+    using(SqlConnection Bd = new SqlConnection(_connectionString))
+    {
+        string sql = "Delete from DEPORTISTAS where (NOMBRE, APELLIDO) VALUES (TIAGO, GHELMAN)";
+        Bd.Execute(sql);
+    }
+}
+
 
 
 
