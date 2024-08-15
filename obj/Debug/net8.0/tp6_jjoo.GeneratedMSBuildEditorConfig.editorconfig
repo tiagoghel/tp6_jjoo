@@ -9,12 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = tp6_jjoo
 build_property.RootNamespace = tp6_jjoo
+<<<<<<< HEAD
 build_property.ProjectDir = z:\jjoo\tp6_jjoo\
+=======
+build_property.ProjectDir = z:\tp6_jjoo\tp6_jjoo\
+>>>>>>> d8e8b24268ca4c9092a8e5d70c49be9d46914b2f
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = z:\jjoo\tp6_jjoo
 build_property._RazorSourceGeneratorDebug = 
 
@@ -35,5 +40,27 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [z:/jjoo/tp6_jjoo/Views/_ViewStart.cshtml]
+=======
+build_property.MSBuildProjectDirectory = z:\tp6_jjoo\tp6_jjoo
+build_property._RazorSourceGeneratorDebug = 
+
+[z:/tp6_jjoo/tp6_jjoo/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/tp6_jjoo/tp6_jjoo/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/tp6_jjoo/tp6_jjoo/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/tp6_jjoo/tp6_jjoo/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/tp6_jjoo/tp6_jjoo/Views/_ViewStart.cshtml]
+>>>>>>> d8e8b24268ca4c9092a8e5d70c49be9d46914b2f
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
