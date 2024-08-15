@@ -9,12 +9,17 @@ private static string _connectionString = @"Server=localhost; DataBase=JJOO; Tru
 
 public static void AgregarDeportista(deportista dep)
 {   
-  
     using(SqlConnection Bd = new SqlConnection(_connectionString))
     {
         string sql = "INSERT INTO DEPORTISTAS (NOMBRE, APELLIDO) VALUES (TIAGO, GHELMAN)";
         Bd.Execute(sql);
     }
 }
+
+
+
+
+
+
 
 }
