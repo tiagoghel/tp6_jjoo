@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\tp6_jjoo\\tp6_jjoo\\tp6_jjoo.csproj": {}
+    "Z:\\jjoo\\tp6_jjoo\\tp6_jjoo.csproj": {}
   },
   "projects": {
-    "Z:\\tp6_jjoo\\tp6_jjoo\\tp6_jjoo.csproj": {
+    "Z:\\jjoo\\tp6_jjoo\\tp6_jjoo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\tp6_jjoo\\tp6_jjoo\\tp6_jjoo.csproj",
+        "projectUniqueName": "Z:\\jjoo\\tp6_jjoo\\tp6_jjoo.csproj",
         "projectName": "tp6_jjoo",
-        "projectPath": "Z:\\tp6_jjoo\\tp6_jjoo\\tp6_jjoo.csproj",
-        "packagesPath": "C:\\Users\\48245701\\.nuget\\packages\\",
-        "outputPath": "Z:\\tp6_jjoo\\tp6_jjoo\\obj\\",
+        "projectPath": "Z:\\jjoo\\tp6_jjoo\\tp6_jjoo.csproj",
+        "packagesPath": "C:\\Users\\48590334\\.nuget\\packages\\",
+        "outputPath": "Z:\\jjoo\\tp6_jjoo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\48245701\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\48590334\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
