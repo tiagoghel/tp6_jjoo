@@ -60,7 +60,7 @@ public static List <pais> ListarPaises()
     List <pais> _ListarPaises = null;
         using(SqlConnection Bd = new SqlConnection(_connectionString))
     {
-        string sql = "SELECT * FROM pais where ";
+        string sql = "SELECT * FROM pais where IdPais=@id;";
         _ListarPaises = Bd.Query<pais>(sql).ToList();
     }
     return _ListarPaises;
