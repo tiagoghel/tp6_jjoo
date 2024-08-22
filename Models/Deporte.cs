@@ -1,8 +1,8 @@
 public class deporte
 {
-    int IdDeporte {get;set;}
-    string Nombre {get;set;}
-    string Foto {get;set;}
+    public int IdDeporte {get;set;}
+    public string Nombre {get;set;}
+    public string Foto {get;set;}
 
 
     public deporte () {}

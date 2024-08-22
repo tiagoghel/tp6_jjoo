@@ -16,6 +16,27 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         return View();
+    }   
+    public IActionResult Deportes()
+    {
+          ViewBag.Deportes=Bd.ListarDeportes();
+          return View();
     }
+
+        public IActionResult Paises()
+    {
+          ViewBag.Paises=Bd.ListarPaises();
+          return View();
+    }
+
+
+    public IActionResult ListarDeportistasXDeporte(int idDeporte)
+    {
+          ViewBag.Deportistas=Bd.ListarDeportistasXDeporte(idDeporte);
+          return View("DeportistasDelDeporte");
+
+    }
+
+
     
 }

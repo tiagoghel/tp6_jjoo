@@ -7,7 +7,7 @@ static public class Bd
 private static string _connectionString = @"Server=localhost; DataBase=JJOO; Trusted_Connection=True;";
 
 
-public static void AgregarDeportista(deportista dep)
+public static void AgregarDeportista(Deportistas dep)
 {   
     using(SqlConnection Bd = new SqlConnection(_connectionString))
     {
@@ -34,59 +34,69 @@ public static deporte VerInfoDeporte(int IdDeporte)
     }
     return _VerInfoDeportes;
 }
-public static pais VerInfoPais(int IdPais)
+public static Pais VerInfoPais(int IdPais)
 {
-         pais _VerInfoPaises = null;
+         Pais _VerInfoPaises = null;
         using(SqlConnection Bd = new SqlConnection(_connectionString))
     {
         string sql = "SELECT * FROM Deportes where IdPais = @id";
-        _VerInfoPaises = Bd.QueryFirstOrDefault<pais>(sql, new{id=IdPais});
+        _VerInfoPaises = Bd.QueryFirstOrDefault<Pais>(sql, new{id=IdPais});
     }
     return _VerInfoPaises;
 }
-public static deportista VerInfoDeportista(int idDeportista)
+public static Deportistas VerInfoDeportista(int idDeportista)
 {
-    deportista _VerInfoDeportistas = null;
+    Deportistas _VerInfoDeportistas = null;
         using(SqlConnection Bd = new SqlConnection(_connectionString))
     {
         string sql = "SELECT * FROM Deportes where IdDeportista = @id";
-        _VerInfoDeportistas = Bd.QueryFirstOrDefault<deportista>(sql, new{id=idDeportista});
+        _VerInfoDeportistas = Bd.QueryFirstOrDefault<Deportistas>(sql, new{id=idDeportista});
     }
     return _VerInfoDeportistas;
 }
 
-public static List <pais> ListarPaises()
+public static List <Pais> ListarPaises()
 {
-    List <pais> _ListarPaises = null;
+    List <Pais> _ListarPaises = null;
         using(SqlConnection Bd = new SqlConnection(_connectionString))
     {
         string sql = "SELECT * FROM pais where IdPais=@id;";
-        _ListarPaises = Bd.Query<pais>(sql).ToList();
+        _ListarPaises = Bd.Query<Pais>(sql).ToList();
     }
     return _ListarPaises;
 }
 
-public static List <deportista> ListarDeportista(int IdDeporte)
+public static List <Deportistas> ListarDeportistasXDeporte(int IdDeporte)
 {
-    List <deportista> _ListarDeportistas = null;
+    List <Deportistas> _ListarDeportistas = null;
         using(SqlConnection Bd = new SqlConnection(_connectionString))
     {
         string sql = "SELECT * FROM deportistas where IdDeporte=IdDeportista";
-        _ListarDeportistas = Bd.Query<deportista>(sql).ToList();
+        _ListarDeportistas = Bd.Query<Deportistas>(sql).ToList();
     }
     return _ListarDeportistas;
 }
-public static List <deportista> ListarDeportistas(int IdPais)
+public static List <Deportistas> ListarDeportistasXPais(int IdPais)
 {
-    List <deportista> _ListarDeportistas = null;
+    List <Deportistas> _ListarDeportistas = null;
         using(SqlConnection Bd = new SqlConnection(_connectionString))
     {
         string sql = "SELECT * FROM deportista where IdPais=IdDeportista";
-        _ListarDeportistas = Bd.Query<deportista>(sql).ToList();
+        _ListarDeportistas = Bd.Query<Deportistas>(sql).ToList();
     }
     return _ListarDeportistas;
 }
 
+public static List <deporte> ListarDeportes()
+{
+    List <deporte> _ListarDeportes = null;
+        using(SqlConnection Bd = new SqlConnection(_connectionString))
+    {
+        string sql = "SELECT * FROM deportes";
+        _ListarDeportes = Bd.Query<deporte>(sql).ToList();
+    }
+    return _ListarDeportes;
+}
 
 
 

@@ -1,0 +1,11 @@
+
+<ul>
+    @foreach (deporte item in ViewBag.Deportes)
+    {
+        <li>@item.Nombre</li>
+        <li>
+            <a href='@Url.Action("ListarDeportistasXDeporte", new{idDeporte=item.IdDeporte})'>Ver Deportistas de @item.Nombre </a>
+            <img src='@item.Foto'>
+        </li>
+    }
+</ul>

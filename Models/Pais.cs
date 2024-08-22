@@ -1,13 +1,13 @@
-public class pais
+public class Pais
 {
-    int IdPais {get;set;}
-    string Nombre {get;set;}
-    string Bandera {get;set;}
-    DateTime FechaFundacion {get;set;}
+    public int IdPais {get;set;}
+    public string Nombre {get;set;}
+    public string Bandera {get;set;}
+    public DateTime FechaFundacion {get;set;}
 
-    public pais (){}
+    public Pais (){}
 
-    public pais(int idpais, string nombre, string bandera, DateTime fechafundacion)
+    public Pais(int idpais, string nombre, string bandera, DateTime fechafundacion)
     {   
         IdPais = idpais;
         Nombre = nombre;
