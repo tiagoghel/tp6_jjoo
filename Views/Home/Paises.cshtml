@@ -3,7 +3,11 @@
     @foreach (Pais pais in ViewBag.paises)
     {
         <li>@pais.Nombre</li>
-        <li>@pais.Bandera</li>
-        <li>@pais.FechaFundacion</li>
+        <li> <img src="@pais.Bandera"></li>
+        <li>
+         <a href='@Url.Action("ListarDeportistasXPais", new {idpais= pais.IdPais})'> Ver Deportistas de @pais.Nombre</a>
+        @pais.FechaFundacion
+        </li>
+          <li><a href='@Url.Action("VerDetallePais","Home", new{idpais= pais.IdPais})'>Ver la info de @pais.Nombre</a></li>
     }
 </ul>

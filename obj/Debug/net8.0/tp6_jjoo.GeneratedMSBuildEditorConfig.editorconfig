@@ -26,12 +26,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXBvcnRpc3Rhc0RlbERlcG9ydGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[Z:/jjoo/tp6_jjoo/Views/Home/DeportistasDelPais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXBvcnRpc3Rhc0RlbFBhaXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/jjoo/tp6_jjoo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/jjoo/tp6_jjoo/Views/Home/Paises.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWlzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/jjoo/tp6_jjoo/Views/Home/VerDetalleDeporte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWZXJEZXRhbGxlRGVwb3J0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/jjoo/tp6_jjoo/Views/Home/VerDetallePais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWZXJEZXRhbGxlUGFpcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/jjoo/tp6_jjoo/Views/Shared/_Layout.cshtml]

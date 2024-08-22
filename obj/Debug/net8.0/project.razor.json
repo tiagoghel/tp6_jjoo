@@ -19344,6 +19344,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "z:\\jjoo\\tp6_jjoo\\Views\\Home\\VerDetallePais.cshtml",
+      "TargetPath": "Views\\Home\\VerDetallePais.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "z:\\jjoo\\tp6_jjoo\\Views\\Home\\DeportistasDelPais.cshtml",
+      "TargetPath": "Views\\Home\\DeportistasDelPais.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "z:\\jjoo\\tp6_jjoo\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -19366,6 +19376,11 @@
     {
       "FilePath": "z:\\jjoo\\tp6_jjoo\\Views\\Home\\Paises.cshtml",
       "TargetPath": "Views\\Home\\Paises.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "z:\\jjoo\\tp6_jjoo\\Views\\Home\\VerDetalleDeporte.cshtml",
+      "TargetPath": "Views\\Home\\VerDetalleDeporte.cshtml",
       "FileKind": "mvc"
     }
   ],

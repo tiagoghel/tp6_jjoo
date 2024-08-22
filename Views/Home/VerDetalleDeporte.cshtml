@@ -1,0 +1,13 @@
+<h1>@ViewBag.Deporte.Nombre</h1>
+
+<ul>
+    @foreach (Deportistas item in ViewBag.Deportista)
+    {
+        <li>@item.Nombre</li>
+        <li>@item.Apellido</li>
+        <li>@item.FechaNacimiento</li>
+        <li>
+            <img src='@item.Foto'>
+        </li>
+    }
+</ul>

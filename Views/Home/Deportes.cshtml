@@ -3,9 +3,12 @@
     @foreach (deporte item in ViewBag.Deportes)
     {
         <li>@item.Nombre</li>
+        <li>@item.IdDeporte</li>
         <li>
-            <a href='@Url.Action("ListarDeportistasXDeporte", new{idDeporte=item.IdDeporte})'>Ver Deportistas de @item.Nombre </a>
+            <a href='@Url.Action("ListarDeportistasXDeporte", new{iddeporte= item.IdDeporte })'> Ver Deportistas de @item.Nombre </a>
             <img src='@item.Foto'>
         </li>
+        
+        <li><a href='@Url.Action("VerDetalleDeporte","Home", new{iddeporte= item.IdDeporte })'>Ver la info de @item.Nombre</a></li>
     }
 </ul>

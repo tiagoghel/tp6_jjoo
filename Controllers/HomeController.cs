@@ -30,12 +30,31 @@ public class HomeController : Controller
     }
 
 
-    public IActionResult ListarDeportistasXDeporte(int idDeporte)
+    public IActionResult ListarDeportistasXDeporte(int iddeporte)
     {
-          ViewBag.Deportistas=Bd.ListarDeportistasXDeporte(idDeporte);
+          ViewBag.Deportistas=Bd.ListarDeportistasXDeporte(iddeporte);
           return View("DeportistasDelDeporte");
 
     }
+    public IActionResult ListarDeportistasXPais(int idpais)
+    {
+          ViewBag.Deportista=Bd.ListarDeportistasXPais(idpais);
+          return View("DeportistasDelPais");
+    }
+      public IActionResult VerDetalleDeporte(int idDeporte)
+    {
+          ViewBag.Deporte=Bd.VerInfoDeporte(idDeporte);
+          ViewBag.Deportista=Bd.ListarDeportistasXDeporte(idDeporte);
+          return View();
+    }
+      public IActionResult VerDetallePais(int IdPais)
+    {
+          ViewBag.Paises=Bd.VerInfoPais(IdPais);
+          ViewBag.Deportista=Bd.ListarDeportistasXPais(IdPais);
+          return View();
+    }
+
+
 
 
     
