@@ -3,10 +3,10 @@ public class Deportistas
     public int IdDeportista {get;set;} 
     public string Apellido {get;set;}
     public string Nombre {get;set;}
-    public DateTime FechaNacimiento {get;set;}
+    public DateTime FechaDeNacimiento {get;set;}
     public string Foto {get;set;}
-    public int IdPais {get;set;}
-    public int IdDeporte {get;set;}
+    public int IDpais {get;set;}
+    public int IDdeporte {get;set;}
 
 
     public Deportistas () {}
@@ -15,10 +15,10 @@ public class Deportistas
         IdDeportista = iddeportista;
         Apellido = apellido;
         Nombre = nombre;
-        FechaNacimiento = fechanacimiento;
+        FechaDeNacimiento = fechanacimiento;
         Foto = foto;
-        IdPais = idpais;
-        IdDeporte = iddeporte;
+        IDpais = idpais;
+        IDdeporte = iddeporte;
     }
 
 }

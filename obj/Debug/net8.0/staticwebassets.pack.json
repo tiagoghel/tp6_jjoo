@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "Z:\\jjoo\\tp6_jjoo\\wwwroot\\img\\Thumbs.db",
+      "PackagePath": "staticwebassets\\img\\Thumbs.db"
+    },
+    {
+      "Id": "Z:\\jjoo\\tp6_jjoo\\wwwroot\\img\\fondo.png",
+      "PackagePath": "staticwebassets\\img\\fondo.png"
+    },
+    {
       "Id": "Z:\\jjoo\\tp6_jjoo\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

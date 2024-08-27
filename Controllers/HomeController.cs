@@ -54,6 +54,23 @@ public class HomeController : Controller
           return View();
     }
 
+          public IActionResult VerDetalleDeportista(int idDeportista)
+    {
+          ViewBag.Deportista=Bd.VerInfoDeportista(idDeportista);
+          return View();
+    }
+     public IActionResult AgregarDeportista()
+    {
+        ViewBag.Paises = Bd.ListarPaises();
+        ViewBag.Deportes = Bd.ListarDeportes();
+        return View();
+    }
+    public IActionResult GuardarDeportista(Deportistas dep)
+    {
+      Bd.AgregarDeportista(dep);
+      return View("Index");
+    }
+
 
 
 

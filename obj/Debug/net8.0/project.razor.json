@@ -19329,6 +19329,11 @@
   "RootNamespace": "tp6_jjoo",
   "Documents": [
     {
+      "FilePath": "z:\\jjoo\\tp6_jjoo\\Views\\Home\\VerDetalleDeportista.cshtml",
+      "TargetPath": "Views\\Home\\VerDetalleDeportista.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "z:\\jjoo\\tp6_jjoo\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -19356,6 +19361,11 @@
     {
       "FilePath": "z:\\jjoo\\tp6_jjoo\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "z:\\jjoo\\tp6_jjoo\\Views\\Home\\AgregarDeportista.cshtml",
+      "TargetPath": "Views\\Home\\AgregarDeportista.cshtml",
       "FileKind": "mvc"
     },
     {

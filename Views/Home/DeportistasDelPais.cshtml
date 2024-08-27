@@ -3,9 +3,12 @@
     {
         <li>@item.Nombre</li>
         <li>@item.Apellido</li>
-        <li>@item.FechaNacimiento</li>
+        <li>@item.FechaDeNacimiento</li>
         <li>
             <img src='@item.Foto'>
         </li>
+        <li><a href='@Url.Action("VerDetalleDeportista","Home", new {idDeportista= item.IdDeportista})'>Ver detalles del Deportista</a></li>
+
+
     }
 </ul>

@@ -11,8 +11,8 @@ public static void AgregarDeportista(Deportistas dep)
 {   
     using(SqlConnection Bd = new SqlConnection(_connectionString))
     {
-        string sql = "INSERT INTO DEPORTISTAS (NOMBRE, APELLIDO) VALUES (TIAGO, GHELMAN)";
-        Bd.Execute(sql);
+        string sql = "INSERT INTO DEPORTISTAS (Nombre, Apellido, FechaDeNacimiento, Foto, IDpais, IDdeporte) VALUES (@pNombre, @pApellido, @pFechaDeNacimiento, @pFoto, @pIDpais, @IDdeporte)";
+        Bd.Execute(sql, new{pNombre=dep.Nombre, pApellido=dep.Apellido, pFechaDeNacimiento=dep.FechaDeNacimiento, pFoto=dep.Foto,pIDpais=dep.IDpais,pIDdeporte=dep.IDdeporte});
     }
 }
 
@@ -49,7 +49,7 @@ public static Deportistas VerInfoDeportista(int idDeportista)
     Deportistas _VerInfoDeportistas = null;
         using(SqlConnection Bd = new SqlConnection(_connectionString))
     {
-        string sql = "SELECT * FROM Deportes where IdDeportista = @id";
+        string sql = "SELECT * FROM Deportistas where IdDeportista = @id";
         _VerInfoDeportistas = Bd.QueryFirstOrDefault<Deportistas>(sql, new{id=idDeportista});
     }
     return _VerInfoDeportistas;
