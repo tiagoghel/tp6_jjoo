@@ -9,10 +9,18 @@ private static string _connectionString = @"Server=localhost; DataBase=JJOO; Tru
 
 public static void AgregarDeportista(Deportistas dep)
 {   
-    using(SqlConnection Bd = new SqlConnection(_connectionString))
+    using (SqlConnection Bd = new SqlConnection(_connectionString))
     {
         string sql = "INSERT INTO DEPORTISTAS (Apellido, Nombre, FechaDeNacimiento, Foto, IDpais, IDdeporte) VALUES (@pApellido, @pNombre, @pFechaDeNacimiento, @pFoto, @pIDpais, @pIDdeporte)";
-        Bd.Execute(sql, new{pApellido=dep.Apellido, pNombre=dep.Nombre, pFechaDeNacimiento=dep.FechaDeNacimiento, pFoto=dep.Foto, pIDpais=dep.IDpais, pIDdeporte=dep.IDdeporte});
+        Bd.Execute(sql, new
+        {
+            pApellido = dep.Apellido,
+            pNombre = dep.Nombre,
+            pFechaDeNacimiento = dep.FechaDeNacimiento,
+            pFoto = dep.Foto,
+            pIDpais = dep.IDpais,
+            pIDdeporte = dep.IDdeporte
+        });
     }
 }
 public static void EliminarDeportista(int idDeportista)
