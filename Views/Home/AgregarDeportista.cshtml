@@ -5,7 +5,17 @@
     Nombre:<input type="text" name="Nombre">
     FechaDeNacimiento:<input type="date" name="FechaDeNacimiento">
     Foto:<input type="text" name="Foto">
-
-
+        <select name="IdPais">
+        @foreach(Pais paises in ViewBag.Paises)
+            {
+                <option value="@paises.IdPais">@paises.Nombre</option>
+            }
+        </select>
+        <select name="IdDeporte">
+        @foreach(deporte deportes in ViewBag.Deportes)
+            {
+                <option value="@deportes.IdDeporte">@deportes.Nombre</option>
+            }
+        </select>
     <input type="submit" placeholder="Agregar Deportista">
 </form>
