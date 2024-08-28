@@ -70,6 +70,11 @@ public class HomeController : Controller
       Bd.AgregarDeportista(dep);
       return View("Index");
     }
+        public IActionResult EliminarDeportista(int idCandidato)
+    {
+        int elimino = Bd.EliminarDeportista(idCandidato);
+        return View("Index");
+    }
     
 
 

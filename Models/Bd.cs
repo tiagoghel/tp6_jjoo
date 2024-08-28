@@ -23,14 +23,23 @@ public static void AgregarDeportista(Deportistas dep)
         });
     }
 }
-public static void EliminarDeportista(int idDeportista)
-{   
-    using(SqlConnection Bd = new SqlConnection(_connectionString))
+
+
+
+    public static int EliminarDeportista (int IDdeportista)
     {
-        string sql = "DELETE FROM Deportista WHERE (NOMBRE, APELLIDO) VALUES (TIAGO, GHELMAN)";
-        Bd.Execute(sql);
+        int DeportistasEliminados = 0;
+                    string sql = "DELETE FROM Deportistas WHERE IDdeportista = @IdsDeportistas";
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            DeportistasEliminados = db.Execute(sql, new {IdsDeportistas = IDdeportista});
+        }
+        return DeportistasEliminados;
     }
-}
+
+
+
+
 public static deporte VerInfoDeporte(int IdDeporte)
 {
         deporte _VerInfoDeportes = null;
