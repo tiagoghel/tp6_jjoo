@@ -70,6 +70,7 @@ public class HomeController : Controller
       Bd.AgregarDeportista(dep);
       return View("Index");
     }
+    
 
 
 

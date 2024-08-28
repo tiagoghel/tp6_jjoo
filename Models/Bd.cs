@@ -11,11 +11,10 @@ public static void AgregarDeportista(Deportistas dep)
 {   
     using(SqlConnection Bd = new SqlConnection(_connectionString))
     {
-        string sql = "INSERT INTO DEPORTISTAS (Nombre, Apellido, FechaDeNacimiento, Foto, IDpais, IDdeporte) VALUES (@pNombre, @pApellido, @pFechaDeNacimiento, @pFoto, @pIDpais, @IDdeporte)";
-        Bd.Execute(sql, new{pNombre=dep.Nombre, pApellido=dep.Apellido, pFechaDeNacimiento=dep.FechaDeNacimiento, pFoto=dep.Foto,pIDpais=dep.IDpais,pIDdeporte=dep.IDdeporte});
+        string sql = "INSERT INTO DEPORTISTAS (Apellido, Nombre, FechaDeNacimiento, Foto, IDpais, IDdeporte) VALUES (@pApellido, @pNombre, @pFechaDeNacimiento, @pFoto, @pIDpais, @pIDdeporte)";
+        Bd.Execute(sql, new{pApellido=dep.Apellido, pNombre=dep.Nombre, pFechaDeNacimiento=dep.FechaDeNacimiento, pFoto=dep.Foto, pIDpais=dep.IDpais, pIDdeporte=dep.IDdeporte});
     }
 }
-
 public static void EliminarDeportista(int idDeportista)
 {   
     using(SqlConnection Bd = new SqlConnection(_connectionString))
