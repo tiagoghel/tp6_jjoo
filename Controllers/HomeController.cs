@@ -75,6 +75,13 @@ public class HomeController : Controller
         int elimino = Bd.EliminarDeportista(idCandidato);
         return View("Index");
     }
+
+    public IActionResult Creditos()
+    {
+        return View();
+    }
+
+
     
 
 
