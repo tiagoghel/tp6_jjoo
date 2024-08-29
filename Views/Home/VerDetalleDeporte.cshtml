@@ -9,5 +9,9 @@
         <li>
             <img src='@item.Foto'>
         </li>
+        <li><a href='@Url.Action("VerDetalleDeportista","Home", new {idDeportista= item.IdDeportista})'>Ver detalles del Deportista</a></li>
+        <li><a href='@Url.Action("AgregarDeportista","Home", new {idDeportista= item.IdDeportista})'>Agregar Deportista</a></li>
+        <li><a href='@Url.Action("EliminarDeportista","Home", new{idCandidato= item.IdDeportista})'>ELiminar Deportista</a></li>
+
     }
 </ul>
